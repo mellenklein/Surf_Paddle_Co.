@@ -1,0 +1,139 @@
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+    background: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+header.main {
+  height: 524px;
+  width: 100%;
+  margin: 0 auto;
+  background: #1264AB;
+
+  section {
+    height: 60px;
+    width: 100%;
+    background: navy;
+  }
+
+  header h3 {
+    margin: 0;
+  }
+
+  h1 {
+    background: none;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 9em;
+    text-shadow: 5px #000;
+    margin: 160px auto 0;
+    font-family: 'Helvetica' sans-serif;
+
+  }
+  p {
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 auto;
+    font-family: 'Helvetica' sans-serif;
+  }
+}
+
+//-----------Main Styles---------//
+
+main {
+  float: left;
+  width: 70%;
+  padding: 10px 60px 0 160px;
+}
+
+aside.sidebar {
+  float: right;
+  width: 30%;
+  padding: 60px 150px 0 60px;
+}
+
+.post {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+
+  h2 {
+    color: #083452;
+    font-size: 6em;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  img {
+    height: 30px;
+    width: 30px;
+    float: left;
+  }
+
+  .name {
+    color: blue;
+    font-size: 1em;
+    float:left;
+    margin: 0 5px;
+  }
+
+p {
+  font-family: 'Helvetica' sans-serif;
+  font-size: 1.75em;
+  margin-left: 0;
+  color: #515C63;
+}
+
+.pull-quote {
+  color: #116BB2;
+  font-size: 3em;
+  font-family: 'Helvetia' sans-serif;
+  font-weight: 400;
+  border-left: 2px solid #CBCBCB;
+  padding: 10px 20px;
+}
+}
+
+.comments {
+  overflow: auto;
+}
+
+.icons {
+  list-style-type: none;
+  display: block;
+  float: left;
+  padding-left: 0;
+}
+
+.icons li {
+  margin-left: 0;
+  margin: 5px;
+  background: gray;
+  float: left;
+}
+
+.icons img {
+  padding: 8px;
+  background: #5E686F;
+}
+
+.icons li h4 {
+  width: 160px;
+  padding: 10px;
+  color: #fff;
+  font-family: 'Helvetica' sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  background: #A3B3BF;
+  margin: 0;
+  text-align: center;
+  box-sizing:
+}
