@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Myriad';
+  src: url('fonts/myriad.otf');
+}
 
 * {
   box-sizing: border-box;
@@ -6,26 +10,68 @@
 
 body {
     background: #fff;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Myriad', 'Oswald', sans-serif;
 }
 
-header.main {
+//HEADER//
+header {
+  background: url(../images/header.jpg) no-repeat center center transparent;
   height: 524px;
+
+h4 {
+  float: left;
+  color: #083451;
+  display: inline-block;
+  margin: 20px 0 0;
+  font-size: 1.75em;
+  font-weight: 400;
+
+  }
+
+header.main {
   width: 100%;
   margin: 0 auto;
-  background: #1264AB;
+}
 
-  section {
+section {
     height: 60px;
     width: 100%;
-    background: navy;
+    background: none;
+}
+
+
+img {
+  margin: 15px 20px 20px 140px;
+  display: inline-block;
+  float: left;
+}
+
+.nav {
+  float: right;
+  margin-right: 170px;
+}
+
+ul {
+  margin-top: 0;
+}
+
+li {
+  font-size: 2em;
+  color: #083451;
+  float: left;
+  padding: 20px 5px;
+  list-style-type: none;
   }
 
-  header h3 {
-    margin: 0;
-  }
+.icon {
+  float: right;
+  margin-top: 5px;
+  margin-left: 0;
+  margin-bottom: 0;
 
-  h1 {
+}
+
+h1 {
     background: none;
     text-align: center;
     color: #fff;
@@ -34,10 +80,10 @@ header.main {
     text-shadow: 5px #000;
     margin: 160px auto 0;
     font-family: 'Helvetica' sans-serif;
-
   }
-  p {
-    color: #000;
+
+p {
+    color: #083451;
     text-align: center;
     font-size: 1.5em;
     margin: 0 auto;
@@ -45,11 +91,17 @@ header.main {
   }
 }
 
+
+
+
+
+
+
 //-----------Main Styles---------//
 
 main {
   float: left;
-  width: 70%;
+  width: 68%;
   padding: 10px 60px 0 160px;
 }
 
@@ -57,12 +109,23 @@ aside.sidebar {
   float: right;
   width: 30%;
   padding: 60px 150px 0 60px;
+  margin-right: 0px;
+}
+
+section.byline h3 {
+  color: #fff;
 }
 
 .post {
   width: 100%;
   margin: 0 auto;
   background: #fff;
+
+li {
+  list-style-type: none;
+  float: left;
+  margin-bottom: 15px;
+}
 
   h2 {
     color: #083452;
@@ -135,5 +198,20 @@ p {
   background: #A3B3BF;
   margin: 0;
   text-align: center;
-  box-sizing:
+}
+
+section.featured h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+section.featured ul.posts {
+  list-style-type: none;
+  display: block;
+  float: left;
+  padding-left: 0;
+}
+
+section.featured img {
+  float: left;
 }
