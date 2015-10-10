@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Myriad';
-  src: url("fonts/myriad.otf"); }
+  src: url("/Users/maryellenklein/dev/_homework/week01/thursday/fonts/myriad.otf"); }
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,8 @@
 
 body {
   background: #fff;
-  font-family: 'Myriad', 'Oswald', sans-serif; }
+  font-family: 'Myriad', 'Oswald', sans-serif;
+  width: 100%; }
 
 header {
   background: url(../images/header.jpg) no-repeat center center transparent;
@@ -17,9 +18,10 @@ header {
     float: left;
     color: #083451;
     display: inline-block;
-    margin: 20px 0 0;
-    font-size: 1.75em;
-    font-weight: 400; }
+    margin: 25px 0 0;
+    font-size: 1.9em;
+    font-weight: 400;
+    font-family: 'Myriad'; }
   header header.main {
     width: 100%;
     margin: 0 auto; }
@@ -35,27 +37,31 @@ header {
     float: right;
     margin-right: 170px; }
   header ul {
-    margin-top: 0; }
+    margin-top: 0;
+    overflow: auto;
+    display: block; }
   header li {
     font-size: 2em;
     color: #083451;
     float: left;
-    padding: 20px 5px;
-    list-style-type: none; }
+    padding: 15px 5px;
+    list-style-type: none;
+    font-family: 'Oswald'; }
   header .icon {
     float: right;
     margin-top: 5px;
     margin-left: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 1em; }
   header h1 {
     background: none;
     text-align: center;
     color: #fff;
     font-weight: 400;
-    font-size: 9em;
+    font-size: 10em;
     text-shadow: 5px #000;
     margin: 160px auto 0;
-    font-family: 'Helvetica' sans-serif; }
+    font-family: 'Myriad' sans-serif; }
   header p {
     color: #083451;
     text-align: center;
@@ -66,45 +72,70 @@ header {
 main {
   float: left;
   width: 68%;
-  padding: 10px 60px 0 160px; }
+  padding: 10px 60px 0 160px;
+  overflow: auto; }
 
 aside.sidebar {
   float: right;
   width: 30%;
-  padding: 60px 150px 0 60px;
-  margin-right: 0px; }
-
-section.byline h3 {
-  color: #fff; }
+  margin: 0 auto; }
+  aside.sidebar section.byline img {
+    margin: 0 50%; }
+  aside.sidebar h3 {
+    color: #156FB2;
+    text-align: center;
+    font-size: 2em; }
+  aside.sidebar ul {
+    padding-left: 0;
+    text-align: center; }
+  aside.sidebar li {
+    color: #A6B2BD;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px auto;
+    font-size: 1.5em;
+    text-align: center; }
 
 .post {
   width: 100%;
   margin: 0 auto;
-  background: #fff; }
+  background: #fff;
+  overflow: auto; }
+  .post .byline {
+    margin-top: 20px; }
+  .post ul {
+    padding-left: 0; }
   .post li {
     list-style-type: none;
-    float: left;
-    margin-bottom: 15px; }
+    display: inline-block;
+    margin-bottom: 0px; }
   .post h2 {
     color: #083452;
     font-size: 6em;
     font-weight: 400;
     line-height: 1.2;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-family: 'Oswald'; }
   .post img {
     height: 30px;
     width: 30px;
     float: left; }
   .post .name {
-    color: blue;
-    font-size: 1em;
+    color: #156FB2;
+    font-size: 1.4em;
     float: left;
-    margin: 0 5px; }
+    margin: 5px; }
+  .post time {
+    color: #A6B2BD;
+    text-decoration: underline;
+    margin: 5px;
+    font-size: 1em; }
   .post p {
     font-family: 'Helvetica' sans-serif;
     font-size: 1.75em;
     margin-left: 0;
-    color: #515C63; }
+    color: #515C63;
+    clear: both; }
   .post .pull-quote {
     color: #116BB2;
     font-size: 3em;
@@ -143,15 +174,56 @@ section.byline h3 {
   margin: 0;
   text-align: center; }
 
+section.featured {
+  clear: both;
+  border-top: gray solid 1px;
+  padding-top: 20px;
+  margin-top: 20px;
+  overflow: auto; }
+
 section.featured h1 {
   font-size: 5em;
   text-align: center; }
 
-section.featured ul.posts {
+section.featured .posts ul {
   list-style-type: none;
+  padding-left: 0;
+  width: 15px;
   display: block;
-  float: left;
-  padding-left: 0; }
+  clear: both;
+  text-align: center; }
 
-section.featured img {
+section.featured li {
+  clear: both;
   float: left; }
+
+footer.main {
+  overflow: auto;
+  float: none;
+  background: #083452; }
+
+.footer img {
+  float: left;
+  margin: 25px 10px 25px 100px; }
+
+.footer p {
+  color: #B2BFC8;
+  float: left;
+  font-size: 1.4em;
+  margin: 35px 10px; }
+
+.footer ul {
+  list-style-type: none;
+  color: #B2BFC8;
+  float: right;
+  margin-right: 0 100px 0 0; }
+
+.footer li {
+  float: left;
+  padding: 0 5px;
+  border-right: #B2BFC8 solid 1px;
+  font-size: 1.4em;
+  margin: 35px 10px; }
+
+.footer li:last-child {
+  border: none; }

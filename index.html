@@ -9,8 +9,6 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
   </head>
 
-
-
   <body>
     <header class="main">
       <section "nav">
@@ -33,11 +31,13 @@
     <section class="main">
       <article class="post">
         <h2>A FANTASTIC ENGAGING HEADLINE GOES HERE</h2>
-        <ul>
-          <li><img src="images/avatar.png" alt="Avatar"></li>
-          <li><p class="name">Anne Marie</p></li>
-          <li><time datetime= ”2015-10-07 19:00”>Wednesday, 10/7/2015</time></li>
-        </ul>
+        <div class="byline">
+          <ul>
+            <li><img src="images/avatar.png" alt="Avatar"></li>
+            <li><p class="name">Anne Marie</p></li>
+            <li><p class="name">on<time datetime= ”2015-10-07 19:00”>Wednesday, 10/7/2015</time><p></li>
+          </ul>
+        </div>
         <p>
           Banksy swag meh Pitchfork. Thundercats High Life Tumblr distillery. Forage bespoke 8-bit, pug letterpress single-origin coffee flannel wayfarers. Actually Bushwick fashion axe Helvetica. Authentic trust fund mlkshk, scenester slow-carb Kickstarter.
         </p>
@@ -69,32 +69,46 @@
         </aside>
       </article>
     </section>
+</main>
+  <aside class="sidebar">
+      <section class="byline">
+        <img src="images/avatar.png" alt="Avatar">
+        <h3>ANNE MARIE</h3>
+        <ul>
+          <li>Twitter</li>
+          <li>Facebook</li>
+          <li>Instagram</li>
+        </ul>
+      </section>
+      <img class ="ad" src="images/ad.jpg" alt="Surfer girl ad">
+      <h3>SIDEBAR SECTION HEADING</h3>
+      <h2>goth trust fund occupy migas. Next level health goth typewriter butcher. Marfa blog wolf locavore ennui, single-origin coffee master cleanse hoodie squid post-ironic messenger bag Pinterest.</h2>
+    </aside>
 
     <section class="featured">
       <h1>MOST POPULAR POSTS</h1>
-      <ul class="posts">
-        <li><img src="images/article-image-1.jpg" alt="Blog post"></li>
-        <li><img src="images/article-image-2.jpg" alt="Blog post"></li>
-        <li><img src="images/article-image-3.jpg" alt="Blog post"></li>
-        <li><img src="images/article-image-4.jpg" alt="Blog post"></li>
-      </ul>
+      <div class="posts">
+        <ul class="clearfix">
+          <li><img src="images/article-image-1.jpg" alt="Blog post"></li>
+          <li><img src="images/article-image-2.jpg" alt="Blog post"></li>
+          <li><img src="images/article-image-3.jpg" alt="Blog post"></li>
+          <li><img src="images/article-image-4.jpg" alt="Blog post"></li>
+        </ul>
+      </div>
     </section>
-  </main>
 
-  <aside class="sidebar">
-    <section class="byline">
-      <img src="images/avatar.png" alt="Avatar">
-      <h3>ANNE MARIE</h3>
-      <h2>Twitter</h2>
-      <h2>Facebook</h2>
-      <h2>Instagram</h2>
-    </section>
-    <img class ="ad" src="images/ad.jpg" alt="Surfer girl ad">
-    <h3>SIDEBAR SECTION HEADING</h3>
-    <h2>goth trust fund occupy migas. Next level health goth typewriter butcher. Marfa blog wolf locavore ennui, single-origin coffee master cleanse hoodie squid post-ironic messenger bag Pinterest.</h2>
-  </aside>
+
+
 
   <footer class="footer main">
+    <img src="images/theironyard-logo.png" alt="TIY logo">
+    <p>The Ironyard Copyright 2013, All Rights Reserved</p>
+    <ul class="nav">
+      <li>Nav1</li>
+      <li>Nav2</li>
+      <li>Nav3</li>
+      <li>Nav4</li>
+    </ul>
   </footer>
   </body>
 </html>
