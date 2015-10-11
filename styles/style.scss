@@ -126,101 +126,25 @@ header::after .overlay {
 
 //-----------Main Styles---------//
 
+div.wrapper {
+  width: 73%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+//------------BLOG POST--------------------------//
+
 main {
   float: left;
   width: 68%;
-  padding: 10px 60px 0 160px;
+  padding-right: 83px;
   overflow: auto;
-}
-
-aside.sidebar {
-  float: right;
-  width: 281px;
-  margin: 0 auto;
-  margin-right: 100px;
-  margin-top: 60px;
-
-
-  section.byline {
-    margin: 0 auto;
-    margin-left: 0;
-    margin-bottom: 70px;
-  }
-  section.byline img {
-    margin: 0 auto;
-    display: block;
-    height: 90px;
-    border-radius: 100px;
-  }
-
-.byline h3,
-h3 {
-  color: #156FB2;
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 0;
-  font-family: 'Myriad';
-}
-
-ul {
-  padding-left: 0;
-  margin-top: 0;
-  text-align: center;
-}
-
-
-  li a {
-    color: #A6B2BD;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 1.5em;
-  }
-
-  li {
-    border-right: #B2BFC8 solid 1px;
-    padding: 0 10px;
-    text-align: center;
-    display: inline-block;
-  }
-
-  li:last-child {
-    border: none;
-  }
-
-  img.ad {
-    display: block;
-    margin: 0 auto;
-    margin-left: 0;
-    width: 281px;
-  }
-
-  figcaption,
-  figcaption a {
-    font-size: 1.2em;
-    color: #A6B2BD;
-    text-align: right;
-  }
-
-  h3 {
-    text-align: left;
-    font-family: 'Oswald';
-    font-weight: 400;
-  }
-
-  h2 {
-    color: #B2BFCA;
-    font-size: 1.6em;
-    font-family: 'Myriad';
-    font-weight: 300;
-    line-height: 1.6;
-  }
-
 }
 
 .post {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   background: #fff;
   overflow: auto;
 
@@ -232,11 +156,11 @@ ul {
     padding-left: 0;
   }
 
-li {
+  li {
   list-style-type: none;
   display: inline-block;
   margin-bottom: 0px;
-}
+  }
 
   h2 {
     color: #083452;
@@ -244,6 +168,7 @@ li {
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 10px;
+    margin-top: 0;
     font-family: 'Oswald';
   }
 
@@ -268,80 +193,160 @@ li {
      margin: 5px;
      font-size: 1em;
    }
+
    span {
      text-decoration: none;
    }
 
-p {
-  font-family: 'Myriad' sans-serif;
-  font-size: 1.75em;
-  margin-left: 0;
-  color: #636C73;
-  clear: both;
-  line-height: 1.4em;
-}
+  p {
+    font-family: 'Myriad' sans-serif;
+    font-size: 1.75em;
+    margin-left: 0;
+    color: #636C73;
+    clear: both;
+    line-height: 1.4em;
+  }
 
-.pull-quote {
-  color: #116BB2;
-  font-size: 3em;
-  font-family: 'Myriad' sans-serif;
-  font-weight: 400;
-  border-left: 2px solid #CBCBCB;
-  padding: 10px 20px;
+  .pull-quote {
+    color: #116BB2;
+    font-size: 3em;
+    font-family: 'Myriad' sans-serif;
+    font-weight: 400;
+    border-left: 2px solid #CBCBCB;
+    padding: 10px 20px;
   }
 }
 
-.comments {
-  overflow: auto;
-}
+//.comments {
+  //overflow: auto;}
 
 .icons {
   list-style-type: none;
   display: block;
   float: left;
   padding-left: 0;
-}
 
-.icons li {
-  margin-left: 0;
-  margin: 5px;
-  background: gray;
-  float: left;
-}
-
-.icons li.share img {
-  background: #083452;
-  border-radius: 0px;
-}
-
-.icons li.share h4 {
-  background: #106CB2;
-
-  a {
-    text-decoration: none;
+  li {
+    margin-left: 0;
+    margin: 5px;
+    float: left;
   }
-}
 
-.icons img {
-  padding: 10px;
-  background: #5E686F;
-  height: 35px;
-  width: 35px;
-  border-radius: 0px;
-}
+  img {
+    padding: 10px;
+    background: #5E686F;
+    height: 35px;
+    width: 35px;
+    border-radius: 0px;
+  }
 
-.icons li h4 {
-  display: inline-block;
-  padding: 10px;
-  font-family: 'Helvetica' sans-serif;
-  font-weight: 400;
-  background: #A3B3BF;
-  margin: 0;
-  text-align: center;
-  a {
+  li h4 {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Helvetica' sans-serif;
+    font-weight: 400;
+    background: #A3B3BF;
+    margin: 0;
+    text-align: center;
+  }
+
+  li h4 a {
     text-decoration: none;
     color: #fff;
     font-size: 1.3em;
+  }
+
+  li.share {
+    img {
+      background: #083452;
+    }
+    h4 {
+      background: #106CB2;
+    }
+  }
+}
+
+
+
+//----------SIDEBAR----------------------------//
+
+aside.sidebar {
+  float: right;
+  width: 31%;
+  margin: 0 auto;
+
+  section.byline {
+    margin: 0 auto;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  section.byline img {
+    margin: 0 auto;
+    display: block;
+    height: 90px;
+    border-radius: 100px;
+  }
+
+  .byline h3,
+  h3 {
+  color: #156FB2;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0;
+  font-family: 'Myriad';
+  }
+
+  ul {
+  padding-left: 0;
+  margin-top: 0;
+  text-align: center;
+  }
+
+  li a {
+    color: #A6B2BD;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+
+  li {
+    border-right: #B2BFC8 solid 1px;
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  li:last-child {
+    border: none;
+  }
+
+  img.ad {
+    display: block;
+    margin: 0 auto;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  figcaption,
+  figcaption a {
+    font-size: 1.2em;
+    color: #A6B2BD;
+    text-align: right;
+  }
+
+  h3 {
+    text-align: left;
+    font-family: 'Oswald';
+    font-weight: 400;
+    margin-top: 50px;
+  }
+
+  h2 {
+    color: #B2BFCA;
+    font-size: 1.4em;
+    font-family: 'Myriad';
+    font-weight: 300;
+    line-height: 1.6;
   }
 }
 
@@ -377,26 +382,28 @@ ul {
   margin-bottom: 0;
   margin: 0 auto;
   width: 100%;
+  text-align: center;
 }
 
 li {
   float:left;
   overflow: auto;
+  display: block;
+  width: 25%;
   //font-size: 0;
 }
 
 h2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 270px 0px 25px 20px;
+  text-align: left;
   font-size: 2.7em;
   font-family: 'Oswald';
   font-weight: 400;
   color: #073250;
   background: url('http://assets.rebelcircus.com/blog/wp-content/uploads/2014/04/harajuku-fashion-fruits-style.jpg') no-repeat center center transparent;
   overflow: auto;
-  height: 330px;
-  width: 326px;
-  margin: 0 auto;
-  padding: 270px 80px 25px 20px;
-  text-align: left;
 }
 
 h2.post2 {

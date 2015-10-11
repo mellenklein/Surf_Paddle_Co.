@@ -93,75 +93,21 @@ header::after .overlay {
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease; }
 
+div.wrapper {
+  width: 73%;
+  margin: 0 auto;
+  margin-top: 60px; }
+
 main {
   float: left;
   width: 68%;
-  padding: 10px 60px 0 160px;
+  padding-right: 83px;
   overflow: auto; }
-
-aside.sidebar {
-  float: right;
-  width: 281px;
-  margin: 0 auto;
-  margin-right: 100px;
-  margin-top: 60px; }
-  aside.sidebar section.byline {
-    margin: 0 auto;
-    margin-left: 0;
-    margin-bottom: 70px; }
-  aside.sidebar section.byline img {
-    margin: 0 auto;
-    display: block;
-    height: 90px;
-    border-radius: 100px; }
-  aside.sidebar .byline h3,
-  aside.sidebar h3 {
-    color: #156FB2;
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 0;
-    font-family: 'Myriad'; }
-  aside.sidebar ul {
-    padding-left: 0;
-    margin-top: 0;
-    text-align: center; }
-  aside.sidebar li a {
-    color: #A6B2BD;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 1.5em; }
-  aside.sidebar li {
-    border-right: #B2BFC8 solid 1px;
-    padding: 0 10px;
-    text-align: center;
-    display: inline-block; }
-  aside.sidebar li:last-child {
-    border: none; }
-  aside.sidebar img.ad {
-    display: block;
-    margin: 0 auto;
-    margin-left: 0;
-    width: 281px; }
-  aside.sidebar figcaption,
-  aside.sidebar figcaption a {
-    font-size: 1.2em;
-    color: #A6B2BD;
-    text-align: right; }
-  aside.sidebar h3 {
-    text-align: left;
-    font-family: 'Oswald';
-    font-weight: 400; }
-  aside.sidebar h2 {
-    color: #B2BFCA;
-    font-size: 1.6em;
-    font-family: 'Myriad';
-    font-weight: 300;
-    line-height: 1.6; }
 
 .post {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   background: #fff;
   overflow: auto; }
   .post .byline {
@@ -178,6 +124,7 @@ aside.sidebar {
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 10px;
+    margin-top: 0;
     font-family: 'Oswald'; }
   .post img {
     height: 30px;
@@ -212,49 +159,95 @@ aside.sidebar {
     border-left: 2px solid #CBCBCB;
     padding: 10px 20px; }
 
-.comments {
-  overflow: auto; }
-
 .icons {
   list-style-type: none;
   display: block;
   float: left;
   padding-left: 0; }
-
-.icons li {
-  margin-left: 0;
-  margin: 5px;
-  background: gray;
-  float: left; }
-
-.icons li.share img {
-  background: #083452;
-  border-radius: 0px; }
-
-.icons li.share h4 {
-  background: #106CB2; }
-  .icons li.share h4 a {
-    text-decoration: none; }
-
-.icons img {
-  padding: 10px;
-  background: #5E686F;
-  height: 35px;
-  width: 35px;
-  border-radius: 0px; }
-
-.icons li h4 {
-  display: inline-block;
-  padding: 10px;
-  font-family: 'Helvetica' sans-serif;
-  font-weight: 400;
-  background: #A3B3BF;
-  margin: 0;
-  text-align: center; }
+  .icons li {
+    margin-left: 0;
+    margin: 5px;
+    float: left; }
+  .icons img {
+    padding: 10px;
+    background: #5E686F;
+    height: 35px;
+    width: 35px;
+    border-radius: 0px; }
+  .icons li h4 {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Helvetica' sans-serif;
+    font-weight: 400;
+    background: #A3B3BF;
+    margin: 0;
+    text-align: center; }
   .icons li h4 a {
     text-decoration: none;
     color: #fff;
     font-size: 1.3em; }
+  .icons li.share img {
+    background: #083452; }
+  .icons li.share h4 {
+    background: #106CB2; }
+
+aside.sidebar {
+  float: right;
+  width: 31%;
+  margin: 0 auto; }
+  aside.sidebar section.byline {
+    margin: 0 auto;
+    margin-left: 0;
+    margin-bottom: 50px; }
+  aside.sidebar section.byline img {
+    margin: 0 auto;
+    display: block;
+    height: 90px;
+    border-radius: 100px; }
+  aside.sidebar .byline h3,
+  aside.sidebar h3 {
+    color: #156FB2;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0;
+    font-family: 'Myriad'; }
+  aside.sidebar ul {
+    padding-left: 0;
+    margin-top: 0;
+    text-align: center; }
+  aside.sidebar li a {
+    color: #A6B2BD;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.5em; }
+  aside.sidebar li {
+    border-right: #B2BFC8 solid 1px;
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block; }
+  aside.sidebar li:last-child {
+    border: none; }
+  aside.sidebar img.ad {
+    display: block;
+    margin: 0 auto;
+    margin-left: 0;
+    width: 100%; }
+  aside.sidebar figcaption,
+  aside.sidebar figcaption a {
+    font-size: 1.2em;
+    color: #A6B2BD;
+    text-align: right; }
+  aside.sidebar h3 {
+    text-align: left;
+    font-family: 'Oswald';
+    font-weight: 400;
+    margin-top: 50px; }
+  aside.sidebar h2 {
+    color: #B2BFCA;
+    font-size: 1.4em;
+    font-family: 'Myriad';
+    font-weight: 300;
+    line-height: 1.6; }
 
 section.featured {
   clear: both;
@@ -274,22 +267,24 @@ section.featured {
     padding-left: 0;
     margin-bottom: 0;
     margin: 0 auto;
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
   section.featured li {
     float: left;
-    overflow: auto; }
+    overflow: auto;
+    display: block;
+    width: 25%; }
   section.featured h2 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 270px 0px 25px 20px;
+    text-align: left;
     font-size: 2.7em;
     font-family: 'Oswald';
     font-weight: 400;
     color: #073250;
     background: url("http://assets.rebelcircus.com/blog/wp-content/uploads/2014/04/harajuku-fashion-fruits-style.jpg") no-repeat center center transparent;
-    overflow: auto;
-    height: 330px;
-    width: 326px;
-    margin: 0 auto;
-    padding: 270px 80px 25px 20px;
-    text-align: left; }
+    overflow: auto; }
   section.featured h2.post2 {
     background: url("https://s-media-cache-ak0.pinimg.com/736x/95/7f/d0/957fd09e56b87c0347b6e075320ac4c5.jpg") no-repeat center center transparent; }
   section.featured h2.post3 {
