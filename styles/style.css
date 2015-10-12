@@ -19,7 +19,6 @@ html, body {
 
 header {
   background: url("https://dplacesyouwillgo.files.wordpress.com/2015/06/osakabg.jpg") no-repeat center center transparent;
-  height: 524px;
   overflow: hidden; }
   header h4 {
     float: left;
@@ -33,18 +32,20 @@ header {
     width: 100%;
     margin: 0 auto; }
   header section {
-    height: 60px;
     width: 100%;
     background: none; }
   header img {
     margin: 15px 20px 20px 140px;
     display: inline-block;
-    float: left; }
+    float: left;
+    height: 40px; }
+  header img.logo-hide {
+    display: none; }
   header .nav {
     float: right;
     margin-right: 160px; }
   header ul {
-    margin-top: 0;
+    margin-top: 22px;
     overflow: auto;
     display: block; }
   header li,
@@ -52,15 +53,13 @@ header {
     font-size: 1.3em;
     color: #fff;
     float: left;
-    padding: 7px 3px;
+    padding: 0px 3px;
     list-style-type: none;
     font-family: 'Oswald';
     text-decoration: none; }
   header .icon {
     float: right;
-    margin-top: 10px;
-    margin-left: 0;
-    margin-bottom: 0;
+    margin: 3px 0 0;
     font-size: 1.3em; }
   header h1 {
     background: none;
@@ -76,7 +75,8 @@ header {
     text-align: center;
     font-size: 1.5em;
     margin: 0 auto;
-    font-family: 'Helvetica' sans-serif; }
+    font-family: 'Helvetica' sans-serif;
+    margin-bottom: 190px; }
 
 header::after .overlay {
   opacity: 1; }
@@ -159,6 +159,9 @@ main {
     border-left: 2px solid #CBCBCB;
     padding: 10px 20px; }
 
+.comments {
+  overflow: auto; }
+
 .icons {
   list-style-type: none;
   display: block;
@@ -181,15 +184,17 @@ main {
     font-weight: 400;
     background: #A3B3BF;
     margin: 0;
-    text-align: center; }
-  .icons li h4 a {
+    text-align: center;
+    font-size: 1.3em; }
+  .icons a {
     text-decoration: none;
     color: #fff;
     font-size: 1.3em; }
   .icons li.share img {
     background: #083452; }
   .icons li.share h4 {
-    background: #106CB2; }
+    background: #106CB2;
+    font-size: 1.3em; }
 
 aside.sidebar {
   float: right;
@@ -269,6 +274,8 @@ section.featured {
     margin: 0 auto;
     width: 100%;
     text-align: center; }
+  section.featured a {
+    text-decoration: none; }
   section.featured li {
     float: left;
     overflow: auto;
