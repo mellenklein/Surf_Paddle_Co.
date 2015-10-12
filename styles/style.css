@@ -18,11 +18,11 @@ html, body {
   overflow-x: hidden; }
 
 header {
-  background: url("https://dplacesyouwillgo.files.wordpress.com/2015/06/osakabg.jpg") no-repeat center center transparent;
+  background: url("../images/tokyo-light.jpg.jpg") no-repeat center center transparent;
   overflow: hidden; }
   header h4 {
     float: left;
-    color: #fff;
+    color: #083452;
     display: inline-block;
     margin: 25px 0 0;
     font-size: 1.9em;
@@ -51,12 +51,14 @@ header {
   header li,
   header a {
     font-size: 1.3em;
-    color: #fff;
+    color: #083452;
     float: left;
     padding: 0px 3px;
     list-style-type: none;
     font-family: 'Oswald';
     text-decoration: none; }
+  header a:hover {
+    color: #156FB2; }
   header .icon {
     float: right;
     margin: 3px 0 0;
@@ -75,7 +77,6 @@ header {
     text-align: center;
     font-size: 1.5em;
     margin: 0 auto;
-    font-family: 'Helvetica' sans-serif;
     margin-bottom: 190px; }
 
 header::after .overlay {
@@ -276,6 +277,9 @@ section.featured {
     text-align: center; }
   section.featured a {
     text-decoration: none; }
+  section.featured ul a:hover h2 {
+    background: url("http://assets.rebelcircus.com/blog/wp-content/uploads/2014/04/harajuku-fashion-fruits-style.jpg") no-repeat center center transparent;
+    overflow: auto; }
   section.featured li {
     float: left;
     overflow: auto;
@@ -290,18 +294,20 @@ section.featured {
     font-family: 'Oswald';
     font-weight: 400;
     color: #073250;
-    background: url("http://assets.rebelcircus.com/blog/wp-content/uploads/2014/04/harajuku-fashion-fruits-style.jpg") no-repeat center center transparent;
+    background: url("../images/featured-1.jpg") no-repeat center center transparent;
     overflow: auto; }
   section.featured h2.post2 {
+    background: url("../images/featured-2.jpg") no-repeat center center transparent; }
+  section.featured a:hover h2.post2 {
     background: url("https://s-media-cache-ak0.pinimg.com/736x/95/7f/d0/957fd09e56b87c0347b6e075320ac4c5.jpg") no-repeat center center transparent; }
   section.featured h2.post3 {
+    background: url("../images/featured-3.jpg") no-repeat center center transparent; }
+  section.featured a:hover h2.post3 {
     background: url("http://1.bp.blogspot.com/-AcKF4U7FhjM/VFi83NIRjrI/AAAAAAAAFHI/4d5x8px_uOc/s1600/fotocabeceradecoratribusurbanas.png") no-repeat center center transparent; }
   section.featured h2.post4 {
+    background: url("../images/featured-4.jpg") no-repeat center center transparent; }
+  section.featured a:hover h2.post4 {
     background: url("http://farm1.static.flickr.com/67/196801306_ece388dbb6.jpg") no-repeat center center transparent; }
-  section.featured .overlay {
-    position: absolute;
-    left: 0;
-    background: rgba(255, 255, 255, 0.5); }
 
 footer.main {
   overflow: auto;
